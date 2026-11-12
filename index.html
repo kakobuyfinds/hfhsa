@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>OKEYHAUL spreadsheet – svensk guide till produktlänkar och QC</title>
+  <meta name="description" content="Hitta rätt kategori och jämför produktlänkar, mått, QC-bilder och frakt till Sverige. En fristående svensk guide till OKEYHAUL spreadsheet.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="OKEYHAUL spreadsheet – svensk köpguide">
+  <meta property="og:description" content="Så jämför du produktlänkar, storlekar, QC-bilder och frakt till Sverige.">
+  <link rel="preconnect" href="https://i.ebayimg.com">
+  <!--
+    Filnamn: index.html.
+    Sökunderlag: tio domäner från tillgängliga sökträffar och kompletterande sökningar.
+    Googles exakta svenska förstasida och ordning kunde inte verifieras.
+    okey-haul.com – kategorier, produktlänkar och QC
+    okeyhaullinks.com – produktlistor och samfrakt
+    qcradar.com – bildkontroll och kostnadsposter
+    kakobuyus.net – QC, avgifter och leverans
+    okeyhaul.com – enskild produktlänk
+    linktr.ee/okeyhaull – ingång till produktlistor
+    okeyhaulsheet.com – sökning och urval
+    okeyhaul.net – produktbilder och länkar
+    okeyhaul.org – kategorier, QC-bilder och köpsteg
+    okeyhaul.shop – produktkort och länktyper
+    Sekundära sökfraser: OKEYHAUL produktlänkar; OKEYHAUL köpguide; OKEYHAUL QC-bilder; OKEYHAUL frakt till Sverige.
+    Kompletterande sökfraser: OKEYHAUL spreadsheet på svenska; hitta skor i OKEYHAUL spreadsheet;
+    jämföra två produktlänkar; kontrollera en Weidian-länk; hitta rätt produktvariant;
+    kontrollera lagerstatus; jämföra storlekstabeller; mäta innersulan på sneakers;
+    mäta bröstvidd på en hoodie; mäta längden på en t-shirt; jämföra midjemått på byxor;
+    kontrollera passform på kepsar; storlekskontroll av armband; läsa QC-bilder före köp;
+    kontrollera sömmar på jackor; jämföra bilder av en produkt; skilja lagerfoto från produktfoto;
+    frakt till Sverige via inköpsagent; faktisk vikt och volymvikt; räkna ut totalkostnad i SEK;
+    jämföra internationella fraktalternativ; kontrollera returvillkor före beställning;
+    kontrollera möjliga importavgifter; spara originallänk till vara.
+  -->
+  <style>
+    :root{color-scheme:light;--paper:#f6f1e9;--ink:#28233c;--muted:#514961;--accent:#48267d;--line:#d9cfdf;--white:#fffdf9}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+    .wrap{width:min(70rem,calc(100% - 2rem));margin-inline:auto}
+    header,footer{border-block-end:1px solid var(--line);padding-block:1rem}
+    footer{border-block:1px solid var(--line) 0;margin-top:3rem}
+    a{color:var(--accent);text-underline-offset:.2em}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    .brand{font-weight:800}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:clamp(1rem,4vw,4rem);padding-block:clamp(1.5rem,5vw,4rem) 1.5rem}
+    h1,h2,h3{line-height:1.13;margin:0 0 .65em}
+    h1{font-size:clamp(2.25rem,5.5vw,4.7rem);letter-spacing:-.045em;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.55rem,3vw,2.35rem)}
+    p{margin:.65rem 0}
+    .button{display:inline-block;margin-top:.7rem;padding:.65rem 1rem;border-radius:.45rem;background:var(--accent);color:white;font-weight:700}
+    figure{margin:0;overflow:hidden;background:var(--white);border:1px solid var(--line);border-radius:.65rem}
+    img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff}
+    figcaption{padding:.45rem .7rem;color:var(--muted);font-size:.88rem}
+    nav,.section{margin-block:1.75rem}
+    .categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.25rem,1fr));gap:.55rem;list-style:none;padding:0}
+    .categories a{display:block;padding:.55rem .7rem;background:var(--white);border:1px solid var(--line);border-radius:.4rem;font-weight:650}
+    .gallery,.guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
+    .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+    article{background:var(--white);padding:1.15rem;border-left:4px solid var(--accent)}
+    details{border-top:1px solid var(--line);padding:.8rem .1rem}
+    summary{cursor:pointer;font-weight:720}
+    @media(max-width:42rem){.hero,.guides{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+<link rel="canonical" href="https://kakobuyfinds.github.io/hfhsa/">
+</head>
+<body>
+<header>
+  <div class="wrap"><a class="brand" href="https://www.hipobuyfind.com">hipobuyfind.com</a></div>
+</header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="sidtitel">
+    <div>
+      <h1 id="sidtitel">OKEYHAUL spreadsheet</h1>
+      <p>En OKEYHAUL spreadsheet är en organiserad samling produktlänkar. Använd den för att hitta varor att jämföra och öppna sedan originalannonsen för att kontrollera variant, mått och aktuell information.</p>
+      <a class="button" href="https://www.hipobuyfind.com">Öppna katalogen på Hipobuyfind</a>
+    </div>
+    <figure>
+      <img src="https://i.ebayimg.com/images/g/SpIAAeSwtz5p~e~X/s-l1200.webp" width="640" height="480" alt="Vit Nike Air Force 1-sneaker" fetchpriority="high" loading="eager">
+      <figcaption>Nike Air Force 1 · Bildexempel för skokategorin</figcaption>
+    </figure>
+  </section>
+  <nav aria-labelledby="kategorier">
+    <h2 id="kategorier">Hitta din kategori</h2>
+    <ul class="categories">
+      <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Skor</a></li>
+      <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies och tröjor</a></li>
+      <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+      <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jackor</a></li>
+      <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Byxor och shorts</a></li>
+      <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Huvudbonader</a></li>
+      <li><a href="https://hipobuyfind.com/category-917-Sets.html">Klädset</a></li>
+      <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Underkläder</a></li>
+      <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Matchtröjor</a></li>
+      <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoarer</a></li>
+    </ul>
+  </nav>
+  <section class="section" aria-labelledby="bildexempel">
+    <h2 id="bildexempel">Detaljer att jämföra</h2>
+    <div class="gallery">
+      <figure>
+        <img src="https://jp.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-essential-cap--M77590_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Louis Vuitton-keps med monogram och böjd skärm">
+        <figcaption>Louis Vuitton · Skärm och form</figcaption>
+      </figure>
+      <figure>
+        <img src="https://www.mytheresa.com/media/1094/1238/100/17/P00939541.jpg" width="1094" height="1238" loading="lazy" decoding="async" alt="Vit Gucci-t-shirt med logotyptryck">
+        <figcaption>Gucci · Tryck och placering</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/013D482J374XC580_E10?%24center_GH_GHC%24=&amp;bfc=on&amp;crop=350%2C147%2C1301%2C1468&amp;qlt=85&amp;wid=480" width="480" height="542" loading="lazy" decoding="async" alt="Mörkblå Dior Oblique-jacka i denim">
+        <figcaption>Dior · Tyg och sömmar</figcaption>
+      </figure>
+      <figure>
+        <img src="https://www.oliverjewellery.ca/cdn/shop/files/Hermes-Palladium-Plated-Orange-Enamel-Clic-H-Bracelet-w-Box_f80dab0b.jpg?v=1744110722&amp;width=480" width="480" height="480" loading="lazy" decoding="async" alt="Orange Hermès Clic H-armband med silverfärgat H-spänne">
+        <figcaption>Hermès · Spänne och finish</figcaption>
+      </figure>
+    </div>
+    <p>Bildexemplen visar detaljer att titta efter. Sortiment och tillgänglighet framgår av respektive annons.</p>
+  </section>
+  <section class="section" aria-labelledby="kopguide">
+    <h2 id="kopguide">OKEYHAUL köpguide</h2>
+    <div class="guides">
+      <article>
+        <h3>Jämför produktlänkar rad för rad</h3>
+        <p>Spara originallänk, säljare, variant och datum när du hittar något intressant. Välj rätt färg och storlek i annonsen innan du jämför pris eller lagerstatus. För sneakers är innersulans längd ofta lättare att jämföra än storleksnumret. För en hoodie, lägg en tröja som passar plant och jämför bröstvidd och längd med säljarens storlekstabell.</p>
+      </article>
+      <article>
+        <h3>Granska QC-bilder och mått</h3>
+        <p>Om det finns QC-bilder för din vara, jämför dem med annonsen och se att bilderna visar rätt variant. Be om en närbild om sömmen eller spännet är otydligt och en bild med måttband om passformen är avgörande. Kontrollera returvillkoren innan du godkänner vidare frakt.</p>
+      </article>
+      <article>
+        <h3>Räkna på frakt till Sverige</h3>
+        <p>Jämför totalkostnaden i SEK. Ta med varans pris, eventuell inrikesfrakt, hantering, internationell frakt och eventuella importavgifter. Kontrollera också om frakttjänsten räknar på faktisk vikt eller volymvikt. En skokartong kan påverka paketets storlek även när själva skorna väger lika mycket.</p>
+      </article>
+      <article>
+        <h3>Behåll två alternativ tills detaljerna är klara</h3>
+        <p>Skriv ned vad som fortfarande är osäkert för varje produkt, till exempel innermått, material eller leveransalternativ. Öppna originalannonsen igen före beställning och kontrollera att länken fortfarande visar samma vara och variant.</p>
+      </article>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="fragor" itemscope itemtype="https://schema.org/FAQPage">
+    <h2 id="fragor">Vanliga frågor</h2>
+    <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <summary itemprop="name">Vad är ett OKEYHAUL spreadsheet?</summary>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Det är en organiserad samling produktlänkar som hjälper dig att hitta och jämföra annonser. Öppna originalannonsen för att kontrollera den variant och information som gäller.</p></div>
+    </details>
+    <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <summary itemprop="name">Vad betyder QC-bilder?</summary>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">QC-bilder är foton för kvalitetskontroll. De kan hjälpa dig att granska synliga detaljer som färg, sömmar och märkning. För att bedöma passformen behöver du också kontrollera måtten.</p></div>
+    </details>
+    <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <summary itemprop="name">Hur jämför jag frakt till Sverige?</summary>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Utgå från samma paketstorlek och leveransadress för varje alternativ. Jämför fraktpris, beräknad leveranstid och vad som ingår. Lägg sedan till eventuella övriga avgifter när du räknar ut totalsumman i SEK.</p></div>
+    </details>
+    <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <summary itemprop="name">Är den här guiden officiell?</summary>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Det här är en fristående guide. Kategorilänkarna går till Hipobuyfind.</p></div>
+    </details>
+  </section>
+</main>
+<footer><div class="wrap"><a href="https://www.hipobuyfind.com">Till Hipobuyfind</a></div></footer>
+</body>
+</html>
